@@ -1,0 +1,71 @@
+
+html {
+    background-color: rgb(83, 1, 83);
+}
+
+.calculator {
+    margin: auto auto;
+    width: 350px;
+    height: 500px;
+    background-color: lightgray;
+    padding: 7px;
+}
+
+.top{
+    width: 95%;
+    margin: 10px 10px 10px 10px;
+    background-color: green;
+    font-family: 'VT323', monospace;
+}
+
+.screen {
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 4em;
+    padding: 0 10px 0 0;
+    border-bottom: 0.1px lightgray solid;
+}
+
+.tape {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30px;
+    font-size: 2em;
+    padding: 0 10px 5px 0;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: 73% 27%;
+    
+}
+
+.numbers {
+    grid-column: 1;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.button {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 1.5em;
+    width: 80px;
+    margin: 2px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(44, 44, 44);
+    background-color: rgb(137, 137, 137);
+}
+
+
+
+
+
+
+.math {
+    grid-column: 2;
+}
