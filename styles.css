@@ -6,20 +6,20 @@ html {
 .calculator {
     margin: auto auto;
     width: 350px;
-    height: 500px;
+    height: 550px;
     background-color: lightgray;
-    padding: 7px;
+    padding: 10px;
 }
 
 .top{
-    width: 95%;
-    margin: 10px 10px 10px 10px;
+    width: 100%;
+    margin-bottom: 10px;
     background-color: green;
     font-family: 'VT323', monospace;
 }
 
 .screen {
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -39,33 +39,69 @@ html {
 
 .keypad {
     display: grid;
-    grid-template-columns: 73% 27%;
-    
+    gap: .6rem;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.numbers {
+.row-1{
+    grid-row: 1;
+}
+
+.row-2{
+ grid-row: 2;
+}
+
+.row-3{
+    grid-row: 3;
+}
+
+.row-4{
+    grid-row: 4;
+}
+
+.row-5{
+    grid-row: 5;
+}
+
+.col-1{
     grid-column: 1;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+}
+
+.col-2{
+    grid-column: 2;
+}
+
+.col-3{
+    grid-column: 3;
+}
+
+.col-4{
+    grid-column: 4;
+}
+
+.col-span-2{
+    grid-column: 1 / span 2;
+}
+
+.col-span-3 {
+    grid-column: 2 / span 4;
+}
+
+.circle {
+    border-radius: 100%;
 }
 
 .button {
     font-family: 'Azeret Mono', monospace;
-    font-size: 1.5em;
+    font-size: 1.7em;
     width: 80px;
-    margin: 2px;
-    border-radius: 5px;
+    height: 80px;
     border: 0.5px solid rgb(44, 44, 44);
     background-color: rgb(137, 137, 137);
 }
 
-
-
-
-
-
-.math {
-    grid-column: 2;
+.equal {
+    width: 255px;
+    border-radius: 50px;
 }
+
