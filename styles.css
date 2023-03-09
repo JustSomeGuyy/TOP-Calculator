@@ -1,46 +1,43 @@
 
 html {
-    background-color: rgb(83, 1, 83);
+    background-color: #800080;
 }
 
 .calculator {
-    margin: auto auto;
+    margin: 50px auto;
     width: 350px;
-    height: 550px;
-    background-color: lightgray;
-    padding: 10px;
+    background-color: #555;
 }
 
 .top{
     width: 100%;
-    margin-bottom: 10px;
-    background-color: green;
-    font-family: 'VT323', monospace;
+    background-color: white;
+    font-family: 'Azeret Mono', monospace;
 }
 
 .screen {
-    height: 60px;
+    height: 150px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 4em;
+    font-size: 3em;
     padding: 0 10px 0 0;
-    border-bottom: 0.1px lightgray solid;
 }
 
 .tape {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 30px;
-    font-size: 2em;
+    height: 75px;
+    font-size: 1.5em;
     padding: 0 10px 5px 0;
 }
 
 .keypad {
     display: grid;
-    gap: .6rem;
+    /* gap: 1rem; */
     grid-template-columns: repeat(4, 1fr);
+    font-family: 'Azeret Mono', monospace;
 }
 
 .row-1{
@@ -84,24 +81,52 @@ html {
 }
 
 .col-span-3 {
-    grid-column: 2 / span 4;
-}
-
-.circle {
-    border-radius: 100%;
+    grid-column: 3 / span 4;
 }
 
 .button {
     font-family: 'Azeret Mono', monospace;
-    font-size: 1.7em;
-    width: 80px;
-    height: 80px;
-    border: 0.5px solid rgb(44, 44, 44);
-    background-color: rgb(137, 137, 137);
+    font-size: 1.5em;
+    width: 87.5px;
+    height: 75px;
+    border: 0.1px solid #525252;
+    background-color: #555;
+    color: rgba(235, 235, 235, 0.705);
 }
 
-.equal {
-    width: 255px;
-    border-radius: 50px;
+.color {
+    font-family: 'Azeret Mono', monospace;
+    background-color: #702963;
+    font-size: 1.5em;
+    width: 87.5px;
+    height: 75px;
+    border: 0.1px solid #6d2860db;
+    color: rgba(235, 235, 235, 0.705);
 }
 
+
+.color:hover {
+    background-color: #67255b;
+    color: white;
+}
+
+.wide {
+    width: 175px;
+}
+
+.button:hover {
+    background-color: #515151;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+
+img {
+    height: 25px;
+    margin-bottom: -5px;
+}
